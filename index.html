@@ -14,28 +14,60 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution {position: fixed; padding: 25px 0; opacity: 0.7; bottom: 0; right: 0; left: 0; font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+<main>
 
-  Preview
+  <div class="card">
 
-  Gabrielle Essence Eau De Parfum
+    <div class="card__image">
+      <picture>
+        <source media="(min-width:600px)" srcset="./images/image-product-mobile.jpg">
+        <img src="./images/image-product-desktop.jpg" alt="image">
+      </picture>
+    </div>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+    <div class="card__content">
 
-  $149.99
-  $169.99
+      <h3 class="card__subtitle">
+        Perfume
+      </h3>
 
-  Add to Cart
+      <h2 class="card__title">
+        Gabrielle Essence Eau De Parfum
+      </h2>
+
+      <p class="card__text">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+
+      <div class="card__price">
+        <span>$149.99</span>
+        <span>$169.99</span>
+      </div>
+
+      <button class="card__btn">
+        <img src="./images/icon-cart.svg" alt="icon">
+        Add to Cart
+      </button>
+
+    </div>
+  </div>
+
+
+
+
+  
   
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+</main>
 </body>
 </html>
