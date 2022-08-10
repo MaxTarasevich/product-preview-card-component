@@ -111,6 +111,9 @@ img{
 }
 
 @media (max-width:650px) {
+    body{
+        padding: 0 10px 80px;
+    }
     
 .card{
     max-width: 344px;
